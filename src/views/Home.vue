@@ -29,10 +29,10 @@ window.ethereum.on("networkChanged", function (networkId) {
   <!-- <div class="bg-warning absolute left-72 h-20 w-20 rounded-b-full"></div> -->
   <div class="">
     <div
-      class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
+      class="mx-auto flex max-w-screen-xl flex-col items-center justify-center px-4 py-12 sm:px-6 md:flex-row md:items-start md:justify-start lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
     >
       <h2
-        class="bg-gradient-to-br from-yellow-100 via-amber-500 to-fuchsia-50 bg-clip-text text-3xl font-extrabold leading-9 tracking-tight text-transparent sm:text-5xl sm:leading-10"
+        class="flex flex-col items-center bg-gradient-to-br from-yellow-100 via-amber-500 to-fuchsia-50 bg-clip-text text-3xl font-extrabold leading-9 tracking-tight text-transparent sm:items-start sm:justify-start sm:text-5xl sm:leading-10"
       >
         Ethereum adventure
         <br />
