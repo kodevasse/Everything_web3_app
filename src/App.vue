@@ -35,7 +35,7 @@ setInterval(() => {
           class="from-primary from-warning mx-2 max-w-md flex-1 rounded-md bg-gradient-to-l px-2 md:from-yellow-500"
         >
           <span class="text-base text-gray-200 hover:animate-pulse">
-            PDPkrypto Web3.0
+            Don't dApp
           </span>
         </div>
         <div class="hidden flex-none lg:block">
@@ -62,7 +62,11 @@ setInterval(() => {
               >
             </li>
             <li>
-              <a class="rounded-btn hover:animate-pulse">NFT App</a>
+              <a
+                @click="$router.push('NftMint')"
+                class="rounded-btn hover:animate-pulse"
+                >NFT App</a
+              >
             </li>
             <li>
               <a class="rounded-btn hover:animate-pulse">ICO dApp</a>
@@ -94,7 +98,9 @@ setInterval(() => {
     </div>
     <div class="drawer-side">
       <label for="my-drawer-3" class="drawer-overlay"></label>
+
       <ul class="menu bg-base-100 w-80 overflow-y-auto p-4">
+        <img src="../logoround.png" alt="" class="ml-4 mb-2 w-14" />
         <li>
           <a @click="$router.push('/')">Home</a>
         </li>
@@ -105,7 +111,7 @@ setInterval(() => {
           <a @click="$router.push('Whitelist')">Whitelist dApp</a>
         </li>
         <li>
-          <a>NFT mint dApp</a>
+          <a @click="$router.push('NftMint')">NFT mint dApp</a>
         </li>
         <li>
           <a>ICO dApp</a>
