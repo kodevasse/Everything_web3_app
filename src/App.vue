@@ -100,7 +100,7 @@ setInterval(() => {
       <label for="my-drawer-3" class="drawer-overlay"></label>
 
       <ul class="menu bg-base-100 w-80 overflow-y-auto p-4">
-        <img src="../logoround.png" alt="" class="ml-4 mb-2 w-14" />
+        <img src="public/logoround.png" alt="" class="ml-4 mb-2 w-14" />
         <li>
           <a @click="$router.push('/')">Home</a>
         </li>
