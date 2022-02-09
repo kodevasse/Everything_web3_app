@@ -33,7 +33,9 @@
               <a @click="router.push('Mood')" class="rounded-btn">Mood dApp</a>
             </li>
             <li>
-              <a class="rounded-btn">Whitelist dApp</a>
+              <a @click="router.push('Whitelist')" class="rounded-btn"
+                >Whitelist dApp</a
+              >
             </li>
             <li>
               <a class="rounded-btn">NFT App</a>
@@ -58,7 +60,7 @@
           <a @click="$router.push('Mood')">Mood dApp</a>
         </li>
         <li>
-          <a>Whitelist dApp</a>
+          <a @click="router.push('Whitelist')">Whitelist dApp</a>
         </li>
         <li>
           <a>NFT mint dApp</a>

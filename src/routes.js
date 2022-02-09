@@ -2,11 +2,13 @@ import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import NotFound from "./views/NotFound.vue";
 import Mood from "./views/web3crypto/Mood.vue";
+import Whitelist from "./views/web3crypto/Whitelist.vue";
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
   { path: "/", component: Home, meta: { title: "Home" } },
   { path: "/mood", component: Mood, meta: { title: "Mood" } },
+  { path: "/whitelist", component: Whitelist, meta: { title: "Whitelist" } },
   {
     path: "/about",
     meta: { title: "About" },

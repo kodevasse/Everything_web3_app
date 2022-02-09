@@ -57,14 +57,14 @@ window.ethereum.on("networkChanged", function (networkId) {
           <div>
             <button
               v-if="!account"
-              class="btn btn-primary relative ml-4 w-44 rounded p-4"
+              class="btn btn-primary relative w-44 rounded p-4 sm:ml-4"
               @click="connectWallet"
             >
               Connect Wallet
             </button>
             <button
               v-if="account"
-              class="btn btn-primary relative ml-4 w-44 rounded p-4"
+              class="btn btn-primary relative w-44 rounded p-4 sm:ml-4"
             >
               Connected
             </button>

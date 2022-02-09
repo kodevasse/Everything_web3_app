@@ -42,13 +42,24 @@ setInterval(() => {
           <ul class="menu horizontal">
             <li>
               <a
-                @click="router.push('Mood')"
+                @click="$router.push('/')"
+                class="rounded-btn hover:animate-pulse"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                @click="$router.push('Mood')"
                 class="rounded-btn hover:animate-pulse"
                 >Mood dApp</a
               >
             </li>
             <li>
-              <a class="rounded-btn hover:animate-pulse">Whitelist dApp</a>
+              <a
+                @click="$router.push('Whitelist')"
+                class="rounded-btn hover:animate-pulse"
+                >Whitelist dApp</a
+              >
             </li>
             <li>
               <a class="rounded-btn hover:animate-pulse">NFT App</a>
@@ -67,10 +78,10 @@ setInterval(() => {
       </div>
       <div class="">
         <header class="shadow" v-if="$route.meta.title">
-          <div class="w-52 px-4 py-6">
+          <div class="w-full px-4 py-6">
             <h1
               @click="counter = 0"
-              class="text-3xl font-bold leading-tight transition-all hover:animate-bounce"
+              class="text-3xl font-bold leading-tight transition-all"
             >
               {{ $route.meta.title }} / {{ counter }}
             </h1>
@@ -85,10 +96,13 @@ setInterval(() => {
       <label for="my-drawer-3" class="drawer-overlay"></label>
       <ul class="menu bg-base-100 w-80 overflow-y-auto p-4">
         <li>
+          <a @click="$router.push('/')">Home</a>
+        </li>
+        <li>
           <a @click="$router.push('Mood')">Mood dApp</a>
         </li>
         <li>
-          <a>Whitelist dApp</a>
+          <a @click="$router.push('Whitelist')">Whitelist dApp</a>
         </li>
         <li>
           <a>NFT mint dApp</a>
