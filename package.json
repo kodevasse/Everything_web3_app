@@ -9,7 +9,7 @@
   "dependencies": {
     "daisyui": "^1.25.4",
     "ethers": "^5.5.4",
-    "vue": "^3.2.30",
+    "vue": "^3.2.33",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
